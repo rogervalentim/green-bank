@@ -7,7 +7,6 @@ export function Hero() {
       <div className="w-full lg:w-auto lg:pl-25 flex flex-col items-center lg:items-start text-center lg:text-left">
         <h1 className="text-white font-bold text-4xl sm:text-5xl lg:text-[56px] leading-tight lg:leading-16 mb-6 lg:mb-8">
           Discover the Perfect
-          <br className="hidden sm:block" />{" "}
           <span className="relative inline-block z-10 px-1">
             Credit Card
             <svg
