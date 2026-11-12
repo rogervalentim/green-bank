@@ -38,7 +38,8 @@ export function Navbar() {
 
         {/* Botão Contact Desktop */}
         <a
-          href="#"
+          href="https://api.whatsapp.com/send/?phone=5511976069285&text&type=phone_number&app_absent=0"
+          target="_blank"
           className="hidden lg:flex border-2 border-[#2BB32A] px-8 py-3 justify-center items-center transition-colors hover:bg-[#259E24] hover:border-[#259E24] hover:text-white rounded-[64px] text-base font-bold leading-6 text-[#2BB32A]"
         >
           Contact
@@ -102,7 +103,8 @@ export function Navbar() {
           </ul>
 
           <a
-            href="#"
+            href="https://api.whatsapp.com/send/?phone=5511976069285&text&type=phone_number&app_absent=0"
+            target="_blank"
             onClick={() => setIsOpen(false)}
             className="w-full border-2 border-[#2BB32A] py-3 flex justify-center items-center transition-colors bg-[#2BB32A] text-white rounded-[64px] text-base font-bold"
           >
