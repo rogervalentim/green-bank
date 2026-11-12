@@ -92,6 +92,7 @@ export function FeaturesSection() {
     <section
       aria-labelledby="features-heading"
       className="max-w-310 mx-auto w-full px-6 mb-24 md:mb-32"
+      id="our-process"
     >
       <h2
         id="features-heading"

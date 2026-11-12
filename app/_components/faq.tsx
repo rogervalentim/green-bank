@@ -54,7 +54,7 @@ export function Faq() {
   };
 
   return (
-    <section className="max-w-255 mx-auto w-full mb-32 px-4">
+    <section className="max-w-255 mx-auto w-full mb-32 px-4" id="faqs">
       <h3 className="text-[40px] font-bold text-white text-center mb-16">
         FAQs
       </h3>

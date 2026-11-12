@@ -4,11 +4,11 @@ import { useState } from "react";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Why Us", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Our Process", href: "#" },
-  { label: "Payments", href: "#" },
-  { label: "FAQs", href: "#" },
+  { label: "Why Us", href: "#why-us" },
+  { label: "Services", href: "#services" },
+  { label: "Our Process", href: "#our-process" },
+  { label: "Payments", href: "#payments" },
+  { label: "FAQs", href: "#faqs" },
 ];
 
 export function Navbar() {

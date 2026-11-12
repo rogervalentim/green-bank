@@ -16,7 +16,10 @@ const brands = [
 
 export function Brands() {
   return (
-    <section className="max-w-310 mx-auto w-full mb-32 overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]">
+    <section
+      className="max-w-310 mx-auto w-full mb-32 overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]"
+      id="services"
+    >
       <div className="flex w-max animate-marquee gap-16 hover:[animation-play-state:paused]">
         {[...brands, ...brands].map((brand, index) => (
           <div
