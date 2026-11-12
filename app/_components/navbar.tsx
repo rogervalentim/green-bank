@@ -15,15 +15,15 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="pt-6 md:pt-8 px-4 sm:px-6 lg:px-8 w-full max-w-310 mx-auto relative">
+    <header className="pt-6 lg:pt-8 px-4 sm:px-6 lg:px-8 w-full max-w-310 mx-auto relative">
       <nav className="flex items-center justify-between">
         {/* Logo */}
         <a href="#">
           <Image src="/logo.png" alt="logo" width={140} height={24} />
         </a>
 
-        {/* Menu Desktop (visível a partir de 768px / md) */}
-        <ul className="hidden md:flex gap-8">
+        {/* Menu Desktop (visível a partir de 1024px / lg) */}
+        <ul className="hidden lg:flex gap-8">
           {navLinks.map((link) => (
             <li key={link.label}>
               <a
@@ -39,16 +39,16 @@ export function Navbar() {
         {/* Botão Contact Desktop */}
         <a
           href="#"
-          className="hidden md:flex border-2 border-[#2BB32A] px-8 py-3 justify-center items-center transition-colors hover:bg-[#259E24] hover:border-[#259E24] hover:text-white rounded-[64px] text-base font-bold leading-6 text-[#2BB32A]"
+          className="hidden lg:flex border-2 border-[#2BB32A] px-8 py-3 justify-center items-center transition-colors hover:bg-[#259E24] hover:border-[#259E24] hover:text-white rounded-[64px] text-base font-bold leading-6 text-[#2BB32A]"
         >
           Contact
         </a>
 
-        {/* Botão Hambúrguer Mobile (visível abaixo de 768px) */}
+        {/* Botão Hambúrguer Mobile/Tablet (visível abaixo de 1024px) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
-          className="md:hidden text-white p-2 focus:outline-none"
+          className="lg:hidden text-white p-2 focus:outline-none"
         >
           {isOpen ? (
             // Ícone X (Fechar)
@@ -84,9 +84,9 @@ export function Navbar() {
         </button>
       </nav>
 
-      {/* Menu Dropdown Mobile */}
+      {/* Menu Dropdown Mobile/Tablet */}
       {isOpen && (
-        <div className="md:hidden mt-4 p-6 rounded-2xl bg-[#283430]/24 backdrop-blur-md border border-white/10 flex flex-col gap-6">
+        <div className="lg:hidden mt-4 p-6 rounded-2xl bg-[#283430]/24 backdrop-blur-md border border-white/10 flex flex-col gap-6">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.label}>

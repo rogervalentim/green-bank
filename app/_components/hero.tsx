@@ -7,7 +7,10 @@ export function Hero() {
       id="why-us"
     >
       {/* Coluna de Texto */}
-      <div className="w-full lg:w-auto lg:pl-25 flex flex-col items-center lg:items-start text-center lg:text-left">
+      <div
+        data-scroll-reveal="left"
+        className="w-full lg:w-auto lg:pl-25 flex flex-col items-center lg:items-start text-center lg:text-left"
+      >
         <h1 className="text-white font-bold text-4xl sm:text-5xl lg:text-[56px] leading-tight lg:leading-16 mb-6 lg:mb-8">
           Discover the Perfect
           <span className="relative inline-block z-10 px-1">
@@ -68,7 +71,10 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="w-full lg:w-auto flex justify-center lg:justify-end">
+      <div
+        data-scroll-reveal="right"
+        className="w-full lg:w-auto flex justify-center lg:justify-end"
+      >
         <Image
           src="/card-hero.png"
           alt="Credit Card"

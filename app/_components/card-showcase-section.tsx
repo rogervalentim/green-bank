@@ -77,12 +77,16 @@ export function CardShowcaseSection() {
         {SHOWCASE_ITEMS.map((item) => (
           <div
             key={item.id}
+            data-scroll-stagger
             className={`flex flex-col lg:flex-row justify-between items-center gap-8 md:gap-12 ${
               item.reverse ? "lg:flex-row-reverse" : ""
             }`}
           >
             {/* Coluna de Texto */}
-            <div className="w-full lg:w-1/2 max-w-xl text-center lg:text-left flex flex-col items-center lg:items-start">
+            <div
+              data-scroll-reveal={item.reverse ? "right" : "left"}
+              className="w-full lg:w-1/2 max-w-xl text-center lg:text-left flex flex-col items-center lg:items-start"
+            >
               <h3 className="text-white text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight mb-4 md:mb-6">
                 {item.title}
               </h3>
@@ -101,7 +105,10 @@ export function CardShowcaseSection() {
             </div>
 
             {/* Coluna de Imagem */}
-            <div className="w-full lg:w-1/2 flex justify-center">
+            <div
+              data-scroll-reveal={item.reverse ? "left" : "right"}
+              className="w-full lg:w-1/2 flex justify-center"
+            >
               <Image
                 src={item.imageSrc}
                 alt={item.imageAlt}

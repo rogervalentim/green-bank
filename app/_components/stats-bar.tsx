@@ -84,10 +84,14 @@ const STATS = [
 export function StatsBar() {
   return (
     <section className="max-w-310 mx-auto w-full px-4 sm:px-6 lg:px-8 mb-16 sm:mb-24 lg:mb-32">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-6 px-6 py-10 sm:px-10 sm:py-12 lg:px-16 lg:py-16 bg-[#3D544D]/24 backdrop-blur-lg rounded-3xl lg:rounded-4xl w-full">
+      <div
+        data-scroll-stagger
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-6 px-6 py-10 sm:px-10 sm:py-12 lg:px-16 lg:py-16 bg-[#3D544D]/24 backdrop-blur-lg rounded-3xl lg:rounded-4xl w-full"
+      >
         {STATS.map((stat, index) => (
           <div
             key={index}
+            data-scroll-reveal="up"
             className="flex justify-center items-center flex-col text-center w-full lg:max-w-69.5 mx-auto"
           >
             <AnimatedCounter

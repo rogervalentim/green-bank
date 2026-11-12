@@ -2,9 +2,12 @@ import Image from "next/image";
 
 export function AppCtaSection() {
   return (
-    <section className="max-w-310 mx-auto w-full px-6 md:px-10 py-12 lg:py-0 flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-8">
+    <section className="max-w-310 mx-auto w-full px-6 md:px-10 flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-8">
       {/* Bloco de Texto e Botões */}
-      <div className="flex flex-col items-center text-center lg:items-start lg:text-left max-w-xl">
+      <div
+        data-scroll-reveal="left"
+        className="flex flex-col items-center text-center lg:items-start lg:text-left max-w-xl"
+      >
         <h3 className="text-white font-bold text-3xl sm:text-4xl lg:text-[48px] leading-tight lg:leading-14 tracking-[-0.48px] mb-4 lg:mb-5">
           Easy Way to manage
           <br className="hidden sm:inline" /> your finances
@@ -43,7 +46,10 @@ export function AppCtaSection() {
       </div>
 
       {/* Imagem do Celular */}
-      <div className="w-full max-w-105 sm:max-w-125 lg:max-w-151 flex justify-center">
+      <div
+        data-scroll-reveal="right"
+        className="w-full max-w-105 sm:max-w-125 lg:max-w-151 flex justify-center"
+      >
         <Image
           src="/cellphone.png"
           alt="Cell Phone"

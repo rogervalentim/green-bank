@@ -44,9 +44,15 @@ export function Footer() {
     <footer className="w-full bg-[#283430]/24 backdrop-blur-lg pt-12 pb-8 px-6 md:pt-15 md:pb-9 md:px-8">
       <div className="max-w-310 mx-auto w-full">
         {/* Seção Superior: Logo + Colunas de Links */}
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-6 lg:gap-8 mb-14 md:mb-20">
+        <div
+          data-scroll-stagger
+          className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-6 lg:gap-8 mb-14 md:mb-20"
+        >
           {/* Coluna da Marca (ocupa 2 colunas no desktop para dar respiro) */}
-          <div className="sm:col-span-2 lg:col-span-2">
+          <div
+            data-scroll-reveal="up"
+            className="sm:col-span-2 lg:col-span-2"
+          >
             <Link href="/" className="inline-block mb-5">
               <Image
                 src="/logo.png"
@@ -62,7 +68,11 @@ export function Footer() {
 
           {/* Colunas de Navegação */}
           {footerSections.map((section) => (
-            <nav key={section.title} aria-label={section.title}>
+            <nav
+              key={section.title}
+              data-scroll-reveal="up"
+              aria-label={section.title}
+            >
               <h4 className="text-base font-bold text-white leading-6 mb-4">
                 {section.title}
               </h4>
@@ -83,7 +93,10 @@ export function Footer() {
         </div>
 
         {/* Barra Inferior: Copyright e Cookies */}
-        <div className="flex flex-col sm:flex-row w-full items-start sm:items-center justify-between gap-4 pt-6 border-t border-white/10">
+        <div
+          data-scroll-reveal="up"
+          className="flex flex-col sm:flex-row w-full items-start sm:items-center justify-between gap-4 pt-6 border-t border-white/10"
+        >
           <p className="text-xs font-normal text-[#ADB2B1] leading-5">
             Copyright © 2026 DoraDesign. All Rights Reserved.
           </p>

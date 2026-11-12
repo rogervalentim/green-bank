@@ -60,10 +60,14 @@ function QuoteIcon() {
 
 export function Testimonials() {
   return (
-    <section className="max-w-310 mx-auto w-full px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8 mb-16 sm:mb-24 lg:mb-32">
+    <section
+      data-scroll-stagger
+      className="max-w-310 mx-auto w-full px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8 mb-16 sm:mb-24 lg:mb-32"
+    >
       {testimonialsData.map(({ id, quote, author, role, avatar }, index) => (
         <article
           key={id}
+          data-scroll-reveal="scale"
           className={`bg-[#27322F]/24 backdrop-blur-lg p-6 sm:p-7 lg:px-6 lg:py-8 rounded-3xl sm:rounded-4xl flex flex-col justify-between ${
             index === 2 ? "md:col-span-2 lg:col-span-1" : ""
           }`}

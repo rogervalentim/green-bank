@@ -96,14 +96,22 @@ export function FeaturesSection() {
     >
       <h2
         id="features-heading"
+        data-scroll-reveal="up"
         className="text-white font-bold text-3xl md:text-[40px] text-center mb-12 md:mb-16"
       >
         What do we offer?
       </h2>
 
-      <div className="grid justify-center items-center grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+      <div
+        data-scroll-stagger
+        className="grid justify-center items-center grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12"
+      >
         {FEATURES.map(({ id, title, description, icon }) => (
-          <div key={id} className="flex items-start gap-6">
+          <div
+            key={id}
+            data-scroll-reveal="up"
+            className="flex items-start gap-6"
+          >
             <div className="bg-[#3D544D] shrink-0 h-16 w-16 rounded-3xl flex justify-center items-center">
               {icon}
             </div>

@@ -17,6 +17,7 @@ const brands = [
 export function Brands() {
   return (
     <section
+      data-scroll-reveal="up"
       className="max-w-310 mx-auto w-full mb-32 overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]"
       id="services"
     >

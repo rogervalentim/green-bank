@@ -55,16 +55,22 @@ export function Faq() {
 
   return (
     <section className="max-w-255 mx-auto w-full mb-32 px-4" id="faqs">
-      <h3 className="text-[40px] font-bold text-white text-center mb-16">
+      <h3
+        data-scroll-reveal="up"
+        className="text-[40px] font-bold text-white text-center mb-16"
+      >
         FAQs
       </h3>
 
-      <div className="divide-y divide-white/20 border-b border-white/20">
+      <div
+        data-scroll-stagger
+        className="divide-y divide-white/20 border-b border-white/20"
+      >
         {faqData.map((item, index) => {
           const isOpen = openIndex === index;
 
           return (
-            <div key={index} className="py-4">
+            <div key={index} data-scroll-reveal="up" className="py-4">
               <button
                 type="button"
                 onClick={() => toggleItem(index)}
